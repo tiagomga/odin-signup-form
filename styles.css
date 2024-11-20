@@ -1,0 +1,154 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    color: #232323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-weight: 600;
+}
+
+img {
+    width: 75px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 40%;
+    background-image: url("./images/plants.jpg");
+}
+
+.sidebar a {
+    color: white;
+}
+
+.sidebar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    color: white;
+    background-color: rgb(30, 30, 30, 0.6);
+    margin-top: 40%;
+    padding: 15px 0;
+}
+
+.sidebar > p {
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f5f5f5;
+}
+
+.content > div:first-child {
+    width: 60%;
+}
+
+#login p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+#login a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.content > div {
+    padding-left: 2rem;
+}
+
+.form {
+    background-color: white;
+    padding: 1.5rem 0 1.5rem 0;
+    box-shadow: 0 7px 15px -5px gray;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 60px;
+    width: 60%;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    width: 200px;
+    font-size: 0.65rem;
+    height: 1.2rem;
+    padding: 0 7px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+label {
+    text-transform: uppercase;
+    font-stretch: narrower;
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #4e4e4e;
+    margin-bottom: 2px;
+}
+
+button {
+    border-style: none;
+    color: white;
+    background-color: #596D48;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #506341;
+}
+
+button:active {
+    background-color: #4b5c3d;
+}
